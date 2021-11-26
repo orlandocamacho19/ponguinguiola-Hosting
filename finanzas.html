@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
+        <link rel="shortcut icon" href="IMG/ponguinguilaico.png" />
+        <script src="JS/ajax.js" type="text/javascript"></script>
+        <title>E/S financieras</title>
+    </head>
+    <body>
+        <div class="top">
+            <nav class="menu">
+                <a href="home.html" class="icon"><img  src="IMG/ponguinguiola.png" alt="alt"/></a>
+                <input onclick="window.location = 'usuarios.html';" type="button" class="btnclse" value="Administrar usuarios" />
+                <input onclick="window.location = 'donaciones.html';" type="button" class="btnclse" value="Administrar donaciones" />
+                <input onclick="window.location = 'estados.html';" type="button" class="btnclse" value="Estados de cuenta" />
+                <input onclick="window.location = 'finanzas.html';" type="button" class="btnclse" value="Entradas/Salidas financieras" />
+                <input onclick="window.location = 'index.html';" type="button" class="btnclse" value="Cerrar sesión" />
+            </nav>
+        </div>   
+
+        <main class="content" id="content">
+            <div class="contenido">
+                <h1 class="titulo">Reporte de entradas y salidas</h1>
+                <form class="estfin">  
+                    <label for="desde">Periodo de inicio:</label>
+                    <input type="date" class="desde" name="trip-start" value="2021-11-23" min="2020-11-23" max="2022-12-31">
+                    <label for="hasta">Periodo de finalización:</label>
+                    <input type="date" class="hasta" name="trip-start" value="2021-11-24" min="2020-11-24" max="2022-12-31">
+                    <input onclick="window.location = 'reporte.html';" type="button" class="generar" value="Generar reporte">
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <div class="col1">
+                <img class="iconfooter" src="IMG/ponguinguiola.png" alt="alt"/>
+                <p class="info">Este es un prototipo realizado como parte de el proyecto 
+                    final de la materia implementación de prototipos, impartida por el profesor
+                    Christian Gibran Duran Solano, como parte de la solución para la 
+                    problematica de ponguinguiola<br/><br/> © Copyright. Todos los derechos reservados</p>
+            </div>
+
+        </footer>
+    </body>
+</html>

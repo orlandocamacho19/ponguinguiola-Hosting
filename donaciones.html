@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
+        <link rel="shortcut icon" href="IMG/ponguinguilaico.png" />
+        <script src="JS/ajax.js" type="text/javascript"></script>
+        <title>Donaciones</title>
+    </head>
+    <body>
+        <div class="top">
+            <nav class="menu">
+                <a href="home.html" class="icon"><img  src="IMG/ponguinguiola.png" alt="alt"/></a>
+                <input onclick="window.location = 'usuarios.html';" type="button" class="btnclse" value="Administrar usuarios" />
+                <input onclick="window.location = 'donaciones.html';" type="button" class="btnclse" value="Administrar donaciones" />
+                <input onclick="window.location = 'estados.html';" type="button" class="btnclse" value="Estados de cuenta" />
+                <input onclick="window.location = 'finanzas.html';" type="button" class="btnclse" value="Entradas/salidas financieras" />
+                <input onclick="window.location = 'index.html';" type="button" class="btnclse" value="Cerrar sesión" />
+            </nav>
+        </div>   
+
+        <main class="content" id="content">
+            <div class="contenido">
+                <h1 class="titulo">Administrar donaciones</h1>
+                <div class="nuevaDonacion">
+                    <div class="formulario">
+                        <input type="text" class="folio" placeholder="Folio" autocomplete="off"><br>
+                        <input type="text" class="peso" placeholder="Peso" autocomplete="off"><br>
+                        <input type="text" class="pago" placeholder="Pago" autocomplete="off"><br>
+                        <input type="text" class="material" list="materiales" placeholder="Material"/>
+                        <datalist id="materiales">
+                            <option value="Carton">
+                            <option value="Papel">
+                            <option value="Plástico">
+                            <option value="Aluminio">
+                        </datalist>
+                    </div>
+
+                    <div class="notas">
+
+                        <input type="text" class="nota" placeholder="Notas" autocomplete="off">
+                    </div>
+
+                </div>
+                <div class="search2">
+                    <label for="buscarDonacion" style="margin-left: 97px">Buscar:</label>
+                    <input type="text" class="buscarDonacion" placeholder="Folio" autocomplete="off">
+                    <input type="button" class="btnD" value="Modificar" />
+                    <input type="button" class="btnD" value="Agregar" />
+                    
+                </div>
+                <table class="table-fill">
+                    <thead>
+                        <tr>
+                            <th scope="col">Folio</th>
+                            <th scope="col">Peso</th>
+                            <th scope="col">Notas</th>
+                            <th scope="col">Material</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0023455</td>
+                            <td>50kg</td>
+                            <td>Sin notas</td>
+                            <td>Carton</td>
+                        </tr>
+                        <tr>
+                            <td>0023456</td>
+                            <td>230kg</td>
+                            <td>Sin notas</td>
+                            <td>Papel</td>
+                        </tr>
+                        <tr>
+                            <td>0023457</td>
+                            <td>123kg</td>
+                            <td>Sin notas</td>
+                            <td>Plastico</td>
+                        </tr>
+                        <tr>
+                            <td>0023458</td>
+                            <td>213kg</td>
+                            <td>Sin notas</td>
+                            <td>Aluminio</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+        <footer>
+            <div class="col1">
+                <img class="iconfooter" src="IMG/ponguinguiola.png" alt="alt"/>
+                <p class="info">Este es un prototipo realizado como parte de el proyecto 
+                    final de la materia implementación de prototipos, impartida por el profesor
+                    Christian Gibran Duran Solano, como parte de la solución para la 
+                    problematica de ponguinguiola<br/><br/> © Copyright. Todos los derechos reservados</p>
+            </div>
+
+        </footer>
+    </body>
+</html>

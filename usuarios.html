@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
+        <link rel="shortcut icon" href="IMG/ponguinguilaico.png" />
+        <script src="JS/ajax.js" type="text/javascript"></script>
+        <title>Usuarios</title>
+    </head>
+    <body>
+        <div class="top">
+            <nav class="menu">
+                <a href="home.html" class="icon"><img  src="IMG/ponguinguiola.png" alt="alt"/></a>
+                <input onclick="window.location = 'usuarios.html';" type="button" class="btnclse" value="Administrar usuarios" />
+                <input onclick="window.location = 'donaciones.html';" type="button" class="btnclse" value="Administrar donaciones" />
+                <input onclick="window.location = 'estados.html';" type="button" class="btnclse" value="Estados de cuenta" />
+                <input onclick="window.location = 'finanzas.html';" type="button" class="btnclse" value="Entradas/salidas financieras" />
+                <input onclick="window.location = 'index.html';" type="button" class="btnclse" value="Cerrar sesión" />
+            </nav>
+        </div>   
+
+        <main class="content" id="content">
+            <div class="contenido">
+                <h1 class="titulo">Administrar usuarios</h1>
+                
+                <div class="search">
+                    <label for="buscarUsuario">Buscar usuario:</label>
+                    <input type="text" class="buscarUsuario" placeholder="Usuario" autocomplete="off">
+                </div>
+
+                <table class="table-fill">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Fecha de nacimiento</th>
+                            <th scope="col">Donaciones totales</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0023455</td>
+                            <td>Juan Hernández Perez</td>
+                            <td>12-Febrero-1998</td>
+                            <td>475 donativos</td>
+                        </tr>
+                        <tr>
+                            <td>0023456</td>
+                            <td>Pepe Madero Suarez</td>
+                            <td>22-Mayo-1980</td>
+                            <td>1820 donativos</td>
+                        </tr>
+                        <tr>
+                            <td>0023457</td>
+                            <td>Javier Méndez Aragón</td>
+                            <td>28-Febrero-2000</td>
+                            <td>234 donativos</td>
+                        </tr>
+                        <tr>
+                            <td>0023458</td>
+                            <td>Ramon Valdez Rosas</td>
+                            <td>13-Agosto-1993</td>
+                            <td>343 donativos</td>
+                        </tr>
+                        <tr>
+                            <td>0023459</td>
+                            <td>Jesús Hernández Torres</td>
+                            <td>11-Febrero-1995</td>
+                            <td>125 donativos</td>
+                        </tr>
+                        <tr>
+                            <td>0023460</td>
+                            <td>José Barrios Salazar</td>
+                            <td>02-Enero-1999</td>
+                            <td>235 donativos</td>
+                        </tr>
+                        <tr>
+                            <td>0023461</td>
+                            <td>Karen Iturriaga Salas</td>
+                            <td>03-Marzo-1992</td>
+                            <td>175 donativos</td>
+                        </tr>
+                        <tr>
+                            <td>0023462</td>
+                            <td>Estefanía Méndez Perez</td>
+                            <td>08-Febrero-2001</td>
+                            <td>625 donativos</td>
+                        </tr>
+                        <tr>
+                            <td>0023463</td>
+                            <td>Pedro Estada Arramon</td>
+                            <td>24-Julio-2003</td>
+                            <td>302 donativos</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="btns">
+                    <input type="button" class="btn" id="add" value="Suspender" />
+                    <input type="button" class="btn" value="Modificar" />
+                    <input type="button" class="btn" value="Agregar" />
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="col1">
+                <img class="iconfooter" src="IMG/ponguinguiola.png" alt="alt"/>
+                <p class="info">Este es un prototipo realizado como parte de el proyecto 
+                    final de la materia implementación de prototipos, impartida por el profesor
+                    Christian Gibran Duran Solano, como parte de la solución para la 
+                    problematica de ponguinguiola<br/><br/> © Copyright. Todos los derechos reservados</p>
+            </div>
+
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="CSS/index.css"/>
+        <link rel="shortcut icon" href="IMG/ponguinguilaico.png" />
+        <script src="JS/validations.js"></script>
+        <title>Ponguinguiola Admin</title>
+    </head>
+    <body>        
+        <div class="wrapper fadeInDown">
+            <div id="formContent">
+                
+                <h2 class="active">Iniciar sesión</h2>
+
+                <div class="fadeIn first">
+                    <img src="IMG/ponguinguiola.png" id="icon" alt="Icon" />
+                </div>
+
+                <form action="home.html" id="form" onsubmit="return validateLogin();">
+                    <input type="text" id="user" class="fadeIn second" name="user" placeholder="Usuario" autocomplete="off">
+                    <input type="password" id="password" class="fadeIn third" name="password" placeholder="Contraseña" autocomplete="off">
+                    <input type="submit" class="fadeIn fourth" value="Ingresar">
+                </form>
+                <p class="message" id="message">Favor de llenar todos los campos<p>
+            </div>
+        </div>
+    </body>
+</html>
